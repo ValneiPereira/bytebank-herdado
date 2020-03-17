@@ -1,7 +1,7 @@
 package com.bytebankherdado.entidade;
 
+import com.bytebankherdado.interfaces.Autenticavel;
 import com.bytebankherdado.util.AutenticacaoUtil;
-import com.bytebankherdado.util.Autenticavel;
 
 public class Gerente extends Funcionario implements Autenticavel {
 

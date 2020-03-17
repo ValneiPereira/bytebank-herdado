@@ -1,7 +1,7 @@
 package com.bytebankherdado.app;
 
-import com.bytebankherdado.entidade.ContaCorrente;
-import com.bytebankherdado.entidade.ContaPoupanca;
+import com.bytebankherdado.service.ContaCorrente;
+import com.bytebankherdado.service.ContaPoupanca;
 
 public class TestaConta {
   public static void main(String[] args) {

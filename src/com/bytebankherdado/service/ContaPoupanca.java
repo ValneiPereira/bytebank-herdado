@@ -1,4 +1,6 @@
-package com.bytebankherdado.entidade;
+package com.bytebankherdado.service;
+
+import com.bytebankherdado.entidade.Conta;
 
 public class ContaPoupanca  extends Conta{
 

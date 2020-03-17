@@ -1,4 +1,4 @@
-package com.bytebankherdado.util;
+package com.bytebankherdado.interfaces;
 
 public abstract interface Autenticavel {
   
