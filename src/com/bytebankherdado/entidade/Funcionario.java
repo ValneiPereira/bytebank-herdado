@@ -1,11 +1,13 @@
 package com.bytebankherdado.entidade;
 
+//nao pode instanciar dessa classe, pq é abstrata
 public abstract class Funcionario {
+
   private String nome;
   private String cpf;
   private double salario;
-  private int    senha;
 
+  //metodo sem corpo, nao há implementacao
   public abstract double getBonificacao();
 
   public String getNome() {
@@ -30,18 +32,6 @@ public abstract class Funcionario {
 
   public void setSalario(double salario) {
     this.salario = salario;
-  }
-
-  public void setSenha(int senha) {
-    this.senha = senha;
-  }
-
-  public boolean autentica(int senha) {
-    if (this.senha == senha) {
-      return true;
-    } else {
-      return false;
-    }
   }
 
 }

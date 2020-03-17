@@ -1,19 +1,20 @@
 package com.bytebankherdado.util;
 
-import com.bytebankherdado.entidade.Funcionario;
+import com.bytebankherdado.entidade.Gerente;
 
 public class SistemaInterno {
 
-  private int senha = 222;
+  private int senha = 2222;
 
-  public void autentica(Funcionario g) {
-    boolean autentucou = g.autentica(this.senha);
-    if (autentucou) {
-      System.out.println("Pode entrar no sistema!!");
-    } else {
-      System.out.println("Não autorizado!!!");
-    }
+  public void autentica(Gerente g){
 
+      boolean autenticou = g.autentica(this.senha);
+
+      if(autenticou){
+          System.out.println("Pode entrar no sistema");
+      } else {
+          System.out.println("Não pode entrar no sistema");
+      }
   }
 
 }
