@@ -1,11 +1,11 @@
 package com.bytebankherdado.entidade;
 
-public class Gerente extends Funcionario {
+public class Administrador extends Funcionario {
 
   @Override
   public double getBonificacao() {
 
-    return 0;
+    return 50;
   }
 
 }

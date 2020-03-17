@@ -1,13 +1,12 @@
 package com.bytebankherdado.entidade;
 
-public class Funcionario {
+public abstract class Funcionario {
   private String nome;
   private String cpf;
   private double salario;
-  
-  public double getBonificacao() {
-    return this.salario * 0.1;
-}
+  private int    senha;
+
+  public abstract double getBonificacao();
 
   public String getNome() {
     return nome;
@@ -31,6 +30,18 @@ public class Funcionario {
 
   public void setSalario(double salario) {
     this.salario = salario;
+  }
+
+  public void setSenha(int senha) {
+    this.senha = senha;
+  }
+
+  public boolean autentica(int senha) {
+    if (this.senha == senha) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
 }

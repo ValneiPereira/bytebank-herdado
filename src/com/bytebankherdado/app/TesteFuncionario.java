@@ -1,12 +1,12 @@
 package com.bytebankherdado.app;
 
-import com.bytebankherdado.entidade.Funcionario;
+import com.bytebankherdado.entidade.Gerente;
 
 public class TesteFuncionario {
 
   public static void main(String[] args) {
 
-    Funcionario nico = new Funcionario();
+    Gerente nico = new Gerente();
 
     nico.setNome("Nico Steppat");
     nico.setCpf("223355646-9");
